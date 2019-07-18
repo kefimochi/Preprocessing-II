@@ -1,6 +1,35 @@
+.img-content-header {
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  .displayFlex(center, center);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto;
+
+  img {
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+  }
+}
+
 .home {
-  header .text-content h2 {
-    padding-top: 1em;
+  background-color: @light-sand;
+  padding: 5em;
+  padding-bottom: 0;
+
+  header .text-content {
+    border-bottom: 2px solid @navigation-border;
+    h2 {
+      padding-top: 1em;
+    }
   }
 
   .content-section {
@@ -26,7 +55,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: 2px solid @navigation-border;
 
     .text-content {
       padding-left: 1%;
@@ -50,13 +79,21 @@
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    border-top: 2px solid @navigation-border;
     display: flex;
     justify-content: space-between;
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .styleButton(@dark);
+      }
+
+      .btn:hover {
+        .hoverButton(@dark);
+      }
     }
   }
 } // home

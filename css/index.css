@@ -134,14 +134,15 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #506170;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -177,7 +178,12 @@ nav {
   align-items: center;
   position: fixed;
   flex-wrap: wrap;
-  background-color: #aa6e14;
+  background-color: #1b2a38;
+}
+nav #logo {
+  color: #fff5e6;
+  text-decoration: none;
+  margin-left: 10em;
 }
 nav .toggle-bars {
   position: absolute;
@@ -196,15 +202,16 @@ nav .toggle-bars .bar {
 }
 nav .links {
   display: flex;
-  justify-content: space-evenly;
-  width: 70%;
-  height: 3em;
+  justify-content: space-around;
   align-items: center;
+  width: 50%;
+  height: 3em;
 }
 nav .links a {
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 1px;
+  font-size: 1.4em;
 }
 nav .links a.hover {
   text-decoration: underline;
@@ -214,14 +221,41 @@ nav .links a.hover {
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
-  background: #ffebcd;
+  background: #1b2a38;
 }
 .footer p {
   text-align: center;
-  color: #212529;
-  font-size: 1.6rem;
-  padding: 20px;
+  color: #c2d7e8;
+  font-size: 1.3rem;
+  padding: 1em;
+}
+.img-content-header {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto;
+}
+.img-content-header img {
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+}
+.home {
+  background-color: #fff5e6;
+  padding: 5em;
+  padding-bottom: 0;
+}
+.home header .text-content {
+  border-bottom: 2px solid #c0c0c0;
 }
 .home header .text-content h2 {
   padding-top: 1em;
@@ -245,7 +279,7 @@ nav .links a.hover {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #c0c0c0;
+  border-bottom: 2px solid #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -264,11 +298,23 @@ nav .links a.hover {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #c0c0c0;
+  border-top: 2px solid #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  border: 2px solid #1b2a38;
+  color: #1b2a38;
+  text-decoration: none;
+  padding: 1em 3em;
+  text-align: center;
+}
+.home .content-pick .destination .btn:hover {
+  border: 2px solid #1b2a38;
+  color: white;
+  background-color: #1b2a38;
 }
