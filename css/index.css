@@ -220,6 +220,12 @@ nav .links {
   align-items: center;
   width: 50%;
   height: 3em;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 501px) {
+  nav .links {
+    width: 100%;
+  }
 }
 nav .links a {
   text-decoration: none;
@@ -276,6 +282,7 @@ nav .links a.hover {
 @media (max-width: 501px) {
   .home {
     padding: 2em;
+    padding-bottom: 0;
   }
 }
 .home header .text-content {
@@ -330,6 +337,11 @@ nav .links a.hover {
   padding-bottom: 30px;
   border-bottom: 2px solid #c0c0c0;
 }
+@media (max-width: 501px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
@@ -342,6 +354,11 @@ nav .links a.hover {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 501px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -351,9 +368,22 @@ nav .links a.hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 501px) {
+  .home .content-pick {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 501px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .destination .btn {
   border: 2px solid #1b2a38;
@@ -361,6 +391,7 @@ nav .links a.hover {
   text-decoration: none;
   padding: 1em 2em;
   text-align: center;
+  transition: all 0.15s ease-in-out;
 }
 .home .content-pick .destination .btn:hover {
   border: 2px solid #1b2a38;

@@ -31,6 +31,7 @@
 
   @media @mobile {
     padding: 2em;
+    padding-bottom: 0;
   }
 
   header .text-content {
@@ -85,6 +86,10 @@
     padding-bottom: 30px;
     border-bottom: 2px solid @navigation-border;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -100,6 +105,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -111,12 +120,22 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      .displayFlex(center, center);
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 80%;
+      }
+
       .btn {
         .styleButton(@dark);
+        .slowerAnimation(0.15s);
       }
 
       .btn:hover {
