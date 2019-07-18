@@ -17,6 +17,10 @@
     background-size: cover;
     width: 100%;
     background-attachment: fixed;
+
+    @media @mobile {
+      margin-top: 5em;
+    }
   }
 }
 
@@ -25,8 +29,17 @@
   padding: 5em;
   padding-bottom: 0;
 
+  @media @mobile {
+    padding: 2em;
+  }
+
   header .text-content {
     border-bottom: 2px solid @navigation-border;
+
+    @media @mobile {
+      text-align: center;
+    }
+
     h2 {
       padding-top: 1em;
     }
@@ -38,14 +51,29 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      width: 100%;
+      flex-direction: column;
+      .displayFlex(center, center);
+      text-align: center;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;

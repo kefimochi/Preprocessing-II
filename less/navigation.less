@@ -7,10 +7,20 @@ nav {
   flex-wrap: wrap;
   background-color: @dark;
 
+  @media @mobile {
+    height: 10em;
+    flex-direction: column;
+    .displayFlex(center, center);
+  }
+
   #logo {
     color: @light-sand;
     text-decoration: none;
     margin-left: 10em;
+
+    @media @mobile {
+      margin: 0;
+    }
   }
 
   .toggle-bars {

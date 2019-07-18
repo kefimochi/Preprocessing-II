@@ -180,10 +180,24 @@ nav {
   flex-wrap: wrap;
   background-color: #1b2a38;
 }
+@media (max-width: 501px) {
+  nav {
+    height: 10em;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 nav #logo {
   color: #fff5e6;
   text-decoration: none;
   margin-left: 10em;
+}
+@media (max-width: 501px) {
+  nav #logo {
+    margin: 0;
+  }
 }
 nav .toggle-bars {
   position: absolute;
@@ -249,13 +263,28 @@ nav .links a.hover {
   width: 100%;
   background-attachment: fixed;
 }
+@media (max-width: 501px) {
+  .img-content-header img {
+    margin-top: 5em;
+  }
+}
 .home {
   background-color: #fff5e6;
   padding: 5em;
   padding-bottom: 0;
 }
+@media (max-width: 501px) {
+  .home {
+    padding: 2em;
+  }
+}
 .home header .text-content {
   border-bottom: 2px solid #c0c0c0;
+}
+@media (max-width: 501px) {
+  .home header .text-content {
+    text-align: center;
+  }
 }
 .home header .text-content h2 {
   padding-top: 1em;
@@ -266,13 +295,33 @@ nav .links a.hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 501px) {
+  .home .content-section {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 501px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 501px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -310,7 +359,7 @@ nav .links a.hover {
   border: 2px solid #1b2a38;
   color: #1b2a38;
   text-decoration: none;
-  padding: 1em 3em;
+  padding: 1em 2em;
   text-align: center;
 }
 .home .content-pick .destination .btn:hover {
